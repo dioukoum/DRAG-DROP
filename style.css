@@ -1,0 +1,296 @@
+body{
+    background: #241E48;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.rigth, .left{
+    width: 50%;
+    padding-left: 5%;
+    position: relative;
+}
+.left .item{
+    width: 300px;
+    height: 100px;
+    background: #18142f;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 40px;
+    transition: .5s;
+    text-align: center;
+}
+.left .item img{
+    height: 100%;
+}
+.left .item:hover{
+    background-color: #5838d1;
+}
+
+.mockup{
+    width: 500px;
+    height: 600px;
+    background-image: url(./shirt.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    filter: drop-shadow(0 0 40px #121212);
+    position: relative;
+}
+.graphic{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 3s;
+}
+.graphic.drag{
+    border: 1px dotted #232020;
+}
+.graphic img{
+    width: 100%;
+}
+.graphic2{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%);
+    transition: 3s;
+}
+.graphic2.drag{
+    border: 1px dotted #232020;
+}
+.graphic2 img{
+    width: 100%;
+}
+.graphic2{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%);
+    transition: 3s;
+}
+.graphic2.drag{
+    border: 1px dotted #232020;
+}
+.graphic2 img{
+    width: 100%;
+}
+.graphic3{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 3s;
+}
+.graphic3.drag{
+    border: 1px dotted #232020;
+}
+.graphic3 img{
+    width: 100%;
+}
+.graphic4{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%);
+    transition: 3s;
+}
+.graphic4.drag{
+    border: 1px dotted #232020;
+}
+.graphic4 img{
+    width: 100%;
+}
+.graphic5{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%);
+    transition: 3s;
+}
+.graphic5.drag{
+    border: 1px dotted #232020;
+}
+.graphic5 img{
+    width: 100%;
+}
+.graphic6{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 3s;
+}
+.graphic6.drag{
+    border: 1px dotted #232020;
+}
+.graphic6 img{
+    width: 100%;
+}
+
+.graphic7{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%);
+    transition: 3s;
+}
+.graphic7.drag{
+    border: 1px dotted #232020;
+}
+.graphic7 img{
+    width: 100%;
+}
+
+@media screen and (max-width:500px){
+    body{
+        background: #241E48;
+    }
+    .container{
+        width: 100vw;
+    }
+    .left{
+        position: fixed;
+        bottom: 20vh;
+        display: flex;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    .mockup{
+        width: 100vw;
+        /* background-position: left; */
+    }
+    .graphic2{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        transform: translate(-50%);
+        transition: 3s;
+    }
+
+}
+@media screen and (max-width:400px){
+    body{
+        background: pink
+    }
+    .container{
+        width: 100vw;
+    }
+    .left{
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        overflow-y: scroll;
+        z-index: 9999;
+    }
+    .left .item{
+        width: 300px;
+        height: 80px;
+        background: #18142f;
+        margin: 30px auto;
+        padding: 10px;
+        border-radius: 40px;
+        transition: .5s;
+        text-align: center;
+    }
+    .mockup{
+        width: 100vw;
+        /* background-position: left; */
+    }
+    .graphic{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 220px;
+        left: 50%;
+        transform: translate(-50%);
+        transition: 3s;
+    }
+   
+    .graphic2{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        transform: translate(-50%);
+        transition: 3s;
+    }
+    
+    
+    .graphic3{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%);
+        transition: 3s;
+    }
+    
+    .graphic4{
+        width: 50px;
+        height:50px;
+        position: absolute;
+        top: 20%;
+        left: 70%;
+        transform: translate(-50%);
+        transition: 3s;
+    }
+   
+    .graphic5{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 60%;
+        left: 30%;
+        transform: translate(-50%);
+        transition: 3s;
+    }
+    
+    .graphic6{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%);
+        transition: 3s;
+    }
+    
+    
+    .graphic7{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 60%;
+        left: 70%;
+        transform: translate(-50%);
+        transition: 3s;
+    }
+}
+@page{
+    background-color: violet;
+}

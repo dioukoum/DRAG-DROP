@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left">
+            <div class="item">
+                <img src="./img1.png" alt="" ondragstart="drag(event)" ontouchstart="drag(event)">
+            </div>
+            <div class="item">
+                <img src="./img2.png" alt="" ondragstart="drag(event)" ontouchstart="drag(event)">
+            </div>
+            <div class="item">
+                <img src="./img3.png" alt="" ondragstart="drag(event)" ontouchstart="drag(event)">
+            </div>
+            <div class="item">
+                <img src="./img4.png" alt="" ondragstart="drag(event)" ontouchstart="drag(event)">
+            </div>
+            <div class="item">
+                <img src="./img4.png" alt="" ondragstart="drag(event)" ontouchstart="drag(event)">
+            </div>
+            <div class="item">
+                <img src="./img4.png" alt="" ondragstart="drag(event)" ontouchstart="drag(event)">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="mockup" id="mockup">
+                <div class="graphic" ondrop="drop(event)" ondragover="allowDrop(event)" ontoucheover="allowDrop(event)" ontouchend="drop(event)">
+                </div>
+
+                <div class="graphic2 graphics" ondrop="drop2(event)" ondragover="allowDrop(event)" ontoucheover="allowDrop(event)" ontouchend="drop2(event)"></div>
+
+                <div class="graphic3" ondrop="drop3(event)" ondragover="allowDrop(event)" ontoucheover="allowDrop(event)" ontouchend="drop3(event)"></div>
+
+                <div class="graphic4" ondrop="drop4(event)" ondragover="allowDrop(event)" ontoucheover="allowDrop(event)" ontouchend="drop4(event)"></div>
+
+                <div class="graphic5" ondrop="drop5(event)" ondragover="allowDrop(event)" ontoucheover="allowDrop(event)" ontouchend="drop5(event)"></div>
+
+                <div class="graphic6" ondrop="drop6(event)" ondragover="allowDrop(event)" ontoucheover="allowDrop(event)" ontouchend="drop6(event)"></div>
+
+                <div class="graphic7" ondrop="drop7(event)" ondragover="allowDrop(event)" ontoucheover="allowDrop(event)" ontouchend="drop7(event)"></div>
+<!-- 
+                <div class="graphic7" ondrop="drop2(event)" ondragover="allowDrop(event)" ontoucheover="allowDrop(event)" ontouchend="drop7(event)"></div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
